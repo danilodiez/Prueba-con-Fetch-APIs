@@ -17,7 +17,7 @@ function cargarTXT(){
 
         })
         .catch(function(error){
-            console.log(erro)
+            console.log(error)
         })
 
 };
@@ -61,7 +61,7 @@ function cargarRest(){
         imagenes.forEach(function(imagen){
             html += `
             <li>
-            <a href = "${imagen.post_url}">Ver Imagen</a>
+            <a href = "${imagen.post_url}" target="_blank">Ver Imagen</a>
             ${imagen.author}
             
             </li>
